@@ -121,8 +121,8 @@ public class Bb implements Serializable {
             facesContext.addMessage(null, message);
             return null;
         }
-        // Entourer la réponse avec "||".
-        this.reponse = "||";
+        // mon traitement personnalisé :
+        this.reponse = "|| Serveur : votre question est \"" + question + "\", voici ma réponse : ";
         // Si la conversation n'a pas encore commencé, ajouter le rôle système au début de la réponse
         if (this.conversation.isEmpty()) {
             // Ajouter le rôle système au début de la réponse
