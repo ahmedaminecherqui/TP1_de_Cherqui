@@ -20,6 +20,7 @@ import java.util.Locale;
 @Named
 @ViewScoped
 public class Bb implements Serializable {
+    private boolean debug;
 
     /**
      * Rôle "système" que l'on attribuera plus tard à un LLM.
@@ -61,7 +62,19 @@ public class Bb implements Serializable {
     /**
      * Obligatoire pour un bean CDI (classe gérée par CDI), s'il y a un autre constructeur.
      */
+
+    public void setDebug(boolean debug) {
+        this.debug = debug;
+    }
     public Bb() {
+        this.setDebug(true);
+    }
+
+    public void toggleDebug() {
+        this.setDebug(!this.debug);
+    }
+    public boolean isDebug() {
+        return this.debug;
     }
 
     public String getRoleSysteme() {
