@@ -1,4 +1,4 @@
-package ma.emsi.cherqui.tp0_de_cherqui.jsf;
+package ma.emsi.cherqui.tp1_de_cherqui.jsf;
 
 import jakarta.faces.application.FacesMessage;
 import jakarta.faces.context.FacesContext;
