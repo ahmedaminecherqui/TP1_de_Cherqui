@@ -117,6 +117,17 @@ public class Bb implements Serializable {
                     you tell them the main places to visit and the average price of a meal.
                     """;
             listeRolesSysteme.add(new SelectItem(role, "Guide touristique"));
+
+
+
+            role = """
+                    you are a famous commedian that has performed in all countries in the world,
+                    you tell the best jokes in the native language of the contry you are performing in,
+                    when a user asks about a joke or to be entertained,you come up with some good 3 jokes,
+                    if the user specifies a country,you give him your best 3 jokes in that country and in its native language.
+                    """;
+
+            listeRolesSysteme.add(new SelectItem(role, "Commedian touristique"));
         }
         return this.listeRolesSysteme;
     }
